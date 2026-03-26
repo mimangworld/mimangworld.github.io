@@ -1,46 +1,113 @@
-<!<!DOCTYPE html>
-<超文本标记语言 语言="zh-CN">（此标签无需翻译，仅用于指定文档语言为简体中文）
-<超文本标记语言 语言="zh-CN">（此标签无需翻译，仅用于指定文档语言为简体中文）
-<元 字符集=“UTF-8”>该标签用于指定文档的字符编码为 UTF-8
-<元 名字=内容=“宽度=device-width，viewport”
-<标题>我的自我介绍</标题>
-<链接 关系=“stylesheet”href=“style.css”>（此句为 HTML movie，mayou）
-</头>
-<身体>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>迷茫世界 | 个人主页</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- 可选：引入图标库，用于技能图标展示 -->
+  <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
 
-<级 班级=“容器”>
-<标头 班级="card">
-<h1>你好，XXX</h1>
-<P 班级=[副标题]>
-  </标头>
+<div class="container">
+  <!-- 头部：个人信息 -->
+  <header class="card hero">
+    <div class="avatar">
+      <!-- 替换成你的头像图片链接，本地图片可上传到仓库后用相对路径 -->
+      <img src="https://via.placeholder.com/120" alt="头像">
+    </div>
+    <h1>你好，我是 迷茫世界</h1>
+    <p class="subtitle">大三 · 软件开发方向 · 持续学习的技术爱好者</p>
+    <div class="social-links">
+      <a href="https://github.com/mimangworld" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="mailto:your-email@example.com" title="邮箱"><i class="fas fa-envelope"></i></a>
+      <!-- 可添加其他社交账号，如掘金、CSDN等 -->
+      <!-- <a href="#" target="_blank" title="掘金"><i class="fab fa-juejin"></i></a> -->
+    </div>
+  </header>
 
-<部分 班级="card">
-<h2>关于我</h2>
-<P>目前就读大三，com，Linux
-<P>平时喜欢做小项目，com</P>
-  </部分>
+  <!-- 关于我 -->
+  <section class="card">
+    <h2><i class="fas fa-user"></i> 关于我</h2>
+    <p>目前就读大三，专业方向为软件开发，专注Java后端、Web前端、Linux系统与数据库技术。</p>
+    <p>热爱编程与开源，平时喜欢做小项目、写技术笔记、研究新技术，目标是成为一名全栈开发工程师。</p>
+    <p>2027届应届毕业生，正在备战春招，欢迎技术交流与合作！</p>
+  </section>
 
-<部分 班级="card">
-<h2>技能</h2>
-    <ul（美国保险商实验室）>
-<李>HTML/CSS/JavaScript基础</李>
-<李>Java编程</李>
-<李>Linux基础操作</李>
-<李>MySQL数据库</李>
-<李>Git&GitHub使用</李>
-    </ul（美国保险商实验室）>
-  </部分>
+  <!-- 技能栈 -->
+  <section class="card">
+    <h2><i class="fas fa-code"></i> 技能栈</h2>
+    <div class="skills-grid">
+      <div class="skill-item">
+        <i class="fab fa-html5"></i>
+        <span>HTML / CSS</span>
+      </div>
+      <div class="skill-item">
+        <i class="fab fa-js"></i>
+        <span>JavaScript</span>
+      </div>
+      <div class="skill-item">
+        <i class="fab fa-java"></i>
+        <span>Java</span>
+      </div>
+      <div class="skill-item">
+        <i class="fab fa-linux"></i>
+        <span>Linux</span>
+      </div>
+      <div class="skill-item">
+        <i class="fas fa-database"></i>
+        <span>MySQL</span>
+      </div>
+      <div class="skill-item">
+        <i class="fab fa-git-alt"></i>
+        <span>Git / GitHub</span>
+      </div>
+      <!-- 可自行添加更多技能 -->
+      <!-- <div class="skill-item">
+        <i class="fab fa-python"></i>
+        <span>Python</span>
+      </div> -->
+    </div>
+  </section>
 
-<部分 班级="card">
-<h2>联系方式</h2>
-<P>GitHub：<一个 超链接引用="https://github.com/mimangworld" 目标="_blank">github.com/mimangworld</一个></P>
-<P>邮箱：your-email@example.com</P>
-  </部分>
+  <!-- 项目作品集 -->
+  <section class="card">
+    <h2><i class="fas fa-project-diagram"></i> 项目作品集</h2>
+    <div class="projects-list">
+      <div class="project-item">
+        <h3>个人自我介绍网站</h3>
+        <p class="project-desc">基于HTML/CSS搭建的响应式个人主页，部署在GitHub Pages，展示个人信息与技能。</p>
+        <p class="project-tech">技术栈：HTML、CSS、GitHub Pages</p>
+        <a href="https://github.com/mimangworld/mimangworld.github.io" target="_blank" class="project-link">查看项目</a>
+      </div>
+      <!-- 可自行添加更多项目 -->
+      <!-- <div class="project-item">
+        <h3>项目名称2</h3>
+        <p class="project-desc">项目简介，1-2句话说明项目功能与用途。</p>
+        <p class="project-tech">技术栈：Java、MySQL、SpringBoot</p>
+        <a href="#" target="_blank" class="project-link">查看项目</a>
+      </div> -->
+    </div>
+  </section>
 
-  <页脚>
-<P>2026由 XXX</P>
-  </页脚>
-</级>
+  <!-- 联系方式 -->
+  <section class="card">
+    <h2><i class="fas fa-address-book"></i> 联系方式</h2>
+    <p><i class="fab fa-github"></i> GitHub：<a href="https://github.com/mimangworld" target="_blank">github.com/mimangworld</a></p>
+    <p><i class="fas fa-envelope"></i> 邮箱：<a href="mailto:your-email@example.com">your-email@example.com</a></p>
+    <!-- 可添加其他联系方式 -->
+    <!-- <p><i class="fab fa-juejin"></i> 掘金：<a href="#" target="_blank">掘金主页链接</a></p> -->
+    <!-- <p><i class="fas fa-file-alt"></i> 简历：<a href="resume.pdf" target="_blank">点击下载简历</a></p> -->
+  </section>
 
-</身体>
-</超文本标记语言>
+  <!-- 页脚 -->
+  <footer>
+    <p>© 2026 迷茫世界. Built with ❤️ by HTML & CSS</p>
+    <!-- 可选：访客统计，需自行申请不蒜子等工具 -->
+    <!-- <p>访客数：<span id="busuanzi_value_site_pv"></span></p> -->
+  </footer>
+</div>
+
+</body>
+</html>
