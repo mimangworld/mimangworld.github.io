@@ -1,113 +1,254 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>迷茫世界 | 个人主页</title>
-  <link rel="stylesheet" href="style.css">
-  <!-- 可选：引入图标库，用于技能图标展示 -->
-  <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[你的名字] | 个人主页</title>
+    <!-- 引入字体图标 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+        body {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            line-height: 1.6;
+            padding-bottom: 50px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        /* 头部样式 */
+        header {
+            text-align: center;
+            padding: 60px 0 40px;
+            border-bottom: 1px solid #30363d;
+            margin-bottom: 40px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            color: #58a6ff;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            color: #8b949e;
+            margin-bottom: 30px;
+        }
+        /* 社交链接 */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .social-links a {
+            color: #c9d1d9;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: #161b22;
+        }
+        .social-links a:hover {
+            color: #58a6ff;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(88, 166, 255, 0.2);
+        }
+        /* 板块通用样式 */
+        section {
+            margin-bottom: 50px;
+        }
+        h2 {
+            color: #58a6ff;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #30363d;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        /* 关于我 */
+        .about-content {
+            background-color: #161b22;
+            padding: 25px;
+            border-radius: 10px;
+            border: 1px solid #30363d;
+        }
+        .about-content p {
+            margin-bottom: 12px;
+            font-size: 1.05rem;
+        }
+        .about-content p:last-child {
+            margin-bottom: 0;
+        }
+        .about-content strong {
+            color: #79c0ff;
+        }
+        /* 技术栈 */
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .tech-badge {
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            padding: 8px 16px;
+            border-radius: 20px;
+            color: #79c0ff;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        .tech-badge:hover {
+            background-color: #58a6ff;
+            color: #0d1117;
+            transform: scale(1.05);
+        }
+        /* 统计卡片 */
+        .stats-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+        .stats-card {
+            width: 100%;
+            max-width: 495px;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        .stats-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(88, 166, 255, 0.2);
+        }
+        .stats-card img {
+            width: 100%;
+            height: auto;
+        }
+        /* 页脚 */
+        footer {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid #30363d;
+            color: #8b949e;
+        }
+        /* 响应式适配 */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            .social-links {
+                gap: 10px;
+            }
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
+        <!-- 头部自我介绍 -->
+        <header>
+            <h1>你好 👋, 我是 [你的名字]</h1>
+            <p class="subtitle">[你的一句话介绍，比如：全栈开发者 / 开源爱好者 / 终身学习者]</p>
+            <div class="social-links">
+                <!-- 社交链接，不需要的可以直接删掉，替换成你自己的账号链接 -->
+                <a href="https://github.com/[你的GitHub用户名]" target="_blank" title="GitHub">
+                    <i class="fa fa-github"></i>
+                </a>
+                <a href="mailto:[你的邮箱地址]" target="_blank" title="邮箱">
+                    <i class="fa fa-envelope"></i>
+                </a>
+                <a href="https://juejin.cn/user/[你的掘金ID]" target="_blank" title="掘金">
+                    <i class="fa fa-bookmark"></i>
+                </a>
+                <a href="https://www.zhihu.com/people/[你的知乎ID]" target="_blank" title="知乎">
+                    <i class="fa fa-quora"></i>
+                </a>
+                <a href="https://blog.csdn.net/[你的CSDN用户名]" target="_blank" title="CSDN">
+                    <i class="fa fa-code"></i>
+                </a>
+                <a href="https://linkedin.com/in/[你的LinkedIn用户名]" target="_blank" title="LinkedIn">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+                <a href="https://twitter.com/[你的Twitter用户名]" target="_blank" title="Twitter">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a href="https://www.youtube.com/c/[你的YouTube频道名]" target="_blank" title="YouTube">
+                    <i class="fa fa-youtube-play"></i>
+                </a>
+            </div>
+        </header>
 
-<div class="container">
-  <!-- 头部：个人信息 -->
-  <header class="card hero">
-    <div class="avatar">
-      <!-- 替换成你的头像图片链接，本地图片可上传到仓库后用相对路径 -->
-      <img src="https://via.placeholder.com/120" alt="头像">
+        <!-- 关于我板块 -->
+        <section>
+            <h2><i class="fa fa-user"></i> 关于我</h2>
+            <div class="about-content">
+                <p><strong>🔭 我目前在做：</strong>[比如：全栈项目开发 / 开源贡献]</p>
+                <p><strong>👯 我希望合作的项目：</strong>[比如：前端开源工具 / 后端框架]</p>
+                <p><strong>🌱 我正在学习：</strong>[比如：Rust / 云原生技术 / 人工智能]</p>
+                <p><strong>💬 可以问我关于：</strong>[比如：React / Node.js / 前端性能优化]</p>
+                <p><strong>📝 我的博客：</strong>[你的博客链接，没有可以删掉这行]</p>
+                <p><strong>⚡ 小彩蛋：</strong>[比如：我同时也是个摄影爱好者 / 游戏玩家]</p>
+            </div>
+        </section>
+
+        <!-- 技术栈板块 -->
+        <section>
+            <h2><i class="fa fa-code"></i> 技术栈</h2>
+            <div class="tech-stack">
+                <!-- 这里可以根据你的技术栈增删，直接复制一行修改文字即可 -->
+                <span class="tech-badge">HTML5</span>
+                <span class="tech-badge">CSS3</span>
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">Vue</span>
+                <span class="tech-badge">React</span>
+                <span class="tech-badge">Node.js</span>
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">Git</span>
+                <span class="tech-badge">Linux</span>
+                <span class="tech-badge">Docker</span>
+            </div>
+        </section>
+
+        <!-- GitHub统计板块 -->
+        <section>
+            <h2><i class="fa fa-bar-chart"></i> GitHub 动态统计</h2>
+            <div class="stats-container">
+                <!-- 连续提交统计 -->
+                <div class="stats-card">
+                    <img src="https://github-readme-streak-stats.herokuapp.com/?user=[你的GitHub用户名]&theme=radical&hide_border=false&border_radius=10" alt="连续提交统计">
+                </div>
+                <!-- GitHub整体数据统计 -->
+                <div class="stats-card">
+                    <img src="https://stats.justsong.cn/api/github?username=[你的GitHub用户名]&theme=radical&show_icons=true" alt="GitHub统计">
+                </div>
+                <!-- 常用语言统计 -->
+                <div class="stats-card">
+                    <img src="https://stats.justsong.cn/api/top-langs/?username=[你的GitHub用户名]&layout=compact&theme=radical&border_radius=10" alt="常用语言统计">
+                </div>
+            </div>
+        </section>
+
+        <!-- 页脚 -->
+        <footer>
+            <p>✨ 感谢访问我的个人主页 | Powered by GitHub Pages</p>
+        </footer>
     </div>
-    <h1>你好，我是 迷茫世界</h1>
-    <p class="subtitle">大二 · 软件开发方向 · 持续学习的技术爱好者</p>
-    <div class="social-links">
-      <a href="https://github.com/mimangworld" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-      <a href="mailto:your-email@example.com" title="邮箱"><i class="fas fa-envelope"></i></a>
-      <!-- 可添加其他社交账号，如掘金、CSDN等 -->
-      <!-- <a href="#" target="_blank" title="掘金"><i class="fab fa-juejin"></i></a> -->
-    </div>
-  </header>
-
-  <!-- 关于我 -->
-  <section class="card">
-    <h2><i class="fas fa-user"></i> 关于我</h2>
-    <p>目前就读大二，专业方向为软件开发，专注Java后端、Web前端、Linux系统与数据库技术。</p>
-    <p>热爱编程与开源，平时喜欢做小项目、写技术笔记、研究新技术，目标是成为一名全栈开发工程师。</p>
-    <p>2028届应届毕业生，欢迎技术交流与合作！</p>
-  </section>
-
-  <!-- 技能栈 -->
-  <section class="card">
-    <h2><i class="fas fa-code"></i> 技能栈</h2>
-    <div class="skills-grid">
-      <div class="skill-item">
-        <i class="fab fa-html5"></i>
-        <span>HTML / CSS</span>
-      </div>
-      <div class="skill-item">
-        <i class="fab fa-js"></i>
-        <span>JavaScript</span>
-      </div>
-      <div class="skill-item">
-        <i class="fab fa-java"></i>
-        <span>Java</span>
-      </div>
-      <div class="skill-item">
-        <i class="fab fa-linux"></i>
-        <span>Linux</span>
-      </div>
-      <div class="skill-item">
-        <i class="fas fa-database"></i>
-        <span>MySQL</span>
-      </div>
-      <div class="skill-item">
-        <i class="fab fa-git-alt"></i>
-        <span>Git / GitHub</span>
-      </div>
-      <!-- 可自行添加更多技能 -->
-      <!-- <div class="skill-item">
-        <i class="fab fa-python"></i>
-        <span>Python</span>
-      </div> -->
-    </div>
-  </section>
-
-  <!-- 项目作品集 -->
-  <section class="card">
-    <h2><i class="fas fa-project-diagram"></i> 项目作品集</h2>
-    <div class="projects-list">
-      <div class="project-item">
-        <h3>个人自我介绍网站</h3>
-        <p class="project-desc">基于HTML/CSS搭建的响应式个人主页，部署在GitHub Pages，展示个人信息与技能。</p>
-        <p class="project-tech">技术栈：HTML、CSS、GitHub Pages</p>
-        <a href="https://github.com/mimangworld/mimangworld.github.io" target="_blank" class="project-link">查看项目</a>
-      </div>
-      <!-- 可自行添加更多项目 -->
-      <!-- <div class="project-item">
-        <h3>项目名称2</h3>
-        <p class="project-desc">项目简介，1-2句话说明项目功能与用途。</p>
-        <p class="project-tech">技术栈：Java、MySQL、SpringBoot</p>
-        <a href="#" target="_blank" class="project-link">查看项目</a>
-      </div> -->
-    </div>
-  </section>
-
-  <!-- 联系方式 -->
-  <section class="card">
-    <h2><i class="fas fa-address-book"></i> 联系方式</h2>
-    <p><i class="fab fa-github"></i> GitHub：<a href="https://github.com/mimangworld" target="_blank">github.com/mimangworld</a></p>
-    <p><i class="fas fa-envelope"></i> 邮箱：<a href="mailto:mimangshijie@gmail.com">your-email@example.com</a></p>
-    <!-- 可添加其他联系方式 -->
-    <!-- <p><i class="fab fa-juejin"></i> 掘金：<a href="#" target="_blank">掘金主页链接</a></p> -->
-    <!-- <p><i class="fas fa-file-alt"></i> 简历：<a href="resume.pdf" target="_blank">点击下载简历</a></p> -->
-  </section>
-
-  <!-- 页脚 -->
-  <footer>
-    <p>© 2026 迷茫世界. Built with ❤️ by HTML & CSS</p>
-    <!-- 可选：访客统计，需自行申请不蒜子等工具 -->
-    <!-- <p>访客数：<span id="busuanzi_value_site_pv"></span></p> -->
-  </footer>
-</div>
-
 </body>
 </html>
