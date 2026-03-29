@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+body {
+    background-color: #0d1117;
+    color: #c9d1d9;
+    line-height: 1.6;
+    padding-bottom: 50px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 头部样式 */
+header {
+    text-align: center;
+    padding: 60px 0 40px;
+    border-bottom: 1px solid #30363d;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #58a6ff;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #8b949e;
+    margin-bottom: 30px;
+}
+
+/* 社交链接 */
+.social-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: #c9d1d9;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #161b22;
+}
+
+.social-links a:hover {
+    color: #58a6ff;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(88, 166, 255, 0.2);
+}
+
+/* 板块通用样式 */
+section {
+    margin-bottom: 50px;
+}
+
+h2 {
+    color: #58a6ff;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #30363d;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* 关于我 */
+.about-content {
+    background-color: #161b22;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #30363d;
+}
+
+.about-content p {
+    margin-bottom: 12px;
+    font-size: 1.05rem;
+}
+
+.about-content p:last-child {
+    margin-bottom: 0;
+}
+
+.about-content strong {
+    color: #79c0ff;
+}
+
+/* 技术栈 */
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.tech-badge {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    padding: 8px 16px;
+    border-radius: 20px;
+    color: #79c0ff;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.tech-badge:hover {
+    background-color: #58a6ff;
+    color: #0d1117;
+    transform: scale(1.05);
+}
+
+/* 统计卡片 */
+.stats-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.stats-card {
+    width: 100%;
+    max-width: 495px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.stats-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(88, 166, 255, 0.2);
+}
+
+.stats-card img {
+    width: 100%;
+    height: auto;
+}
+
+/* 页脚 */
+footer {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid #30363d;
+    color: #8b949e;
+}
+
+/* 响应式适配 */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    .social-links {
+        gap: 10px;
+    }
+}
